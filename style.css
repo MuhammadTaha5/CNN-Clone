@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 0 30px 0 30px;
+}
+
+.leftHeaderBar , .rightHeaderBar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.leftHeaderBar a, .rightHeaderBar a{
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 560;
+
+}
+#CNN-Logo
+{
+    width: 50px;
+}
+.leftHeaderBar
+{
+    width: 600px;
+}
+.rightHeaderBar
+{
+    width: 400px;
+}
+.headerEle{
+    display: flex;
+    gap: 8px;
+    align-content: center;
+    
+}
+.dot
+{
+    color: rgb(146, 24, 24);
+    font-size: 10px;
+}
+button
+{
+    background-color: azure;
+    border: 1px solid grey;   /* gray border */
+    background-color: white;  /* optional for contrast */
+    color: black;             /* text color */
+    padding: 6px 12px;        /* space inside button */
+    border-radius: 10px;       /* optional: slightly rounded corners */
+    cursor: pointer;   
+    font-weight: bold;
+}
+section.NewsList
+{
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow-x: auto;       /* horizontal scroll */
+  white-space: nowrap;    /* keep items in a single row */
+  padding: 10px 10px;
+  scrollbar-width: thin;  /* for Firefox */
+}
+section span a,section span{
+    text-decoration: none;
+    color: #666;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mainNews
+{
+    margin: 20px 30px 0 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+    
+}
+h2 a
+{
+    text-decoration: none; color: black; text-align: justify;
+    
+}
+.headline, .headline h2 a
+{
+padding: 2px 0 0 0;
+font-weight:900;
+
+}
+img
+{
+    border-radius: 8px
+}
+ul {
+  list-style-type: disc; /* disc (default), circle, square, none */
+  padding-left: 20px;    /* spacing from left */
+}
+@media (max-width: 768px) {
+  .mainNews div {
+    flex: 1 1 100%;  /* full width for each block */
+  }
+  .leftHeaderBar
+  {
+    display: none;
+    
+  }
+  .rightHeaderBar
+  {
+    display: none;
+  }
+  #heading
+  {
+    order: 2;
+  }
+}
