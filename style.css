@@ -111,6 +111,10 @@ ul {
   list-style-type: disc; /* disc (default), circle, square, none */
   padding-left: 20px;    /* spacing from left */
 }
+footer
+{
+    background-color: black;
+}
 @media (max-width: 768px) {
   .mainNews div {
     flex: 1 1 100%;  /* full width for each block */
@@ -196,6 +200,56 @@ section{
     cursor: pointer;
 }
  
+
+.logoSectionFooter
+{
+    margin: 0 20px 0 20px;
+    font-family: "Helvetica Neue", Arial, Inter, sans-serif;
+    padding: 20px 20px 20px 20px;
+    font-family: "Helvetica Neue", Arial, Inter, sans-serif;
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+   border-top: 2px solid whitesmoke;      /* top border (2px, black) */
+     border-bottom: 2px solid whitesmoke;   /* bottom border (2px, black) */
+}
+.logoFooterRight
+{
+    font-family: "Helvetica Neue", Arial, Inter, sans-serif;
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+.logoFooterRight span, .logoFooterRight a, .logoFooterRight button, .centerSection a
+{
+    font-family: "Helvetica Neue", Arial, Inter, sans-serif;
+    color: aliceblue;
+    font-size: large;
+    align-self: center;
+    text-decoration: none;
+
+}
+.centerSection 
+{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socialContact
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
 @media (max-width: 600px) {
   .rightNewSection{
     flex: 1 1 100%;
@@ -217,4 +271,40 @@ section{
   font-size: 1rem;        /* slightly larger heading */
   margin-bottom: 10px;
 }
+    .logoSectionFooter, .logoSectionFooter .logo
+    {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-weight: 500;
+        gap: 10px;
+    }
+    .logoFooterRight .footerFollow
+    {
+        display: block;
+    }
+
+    .centerSection, .line
+    {
+        display: none;
+    }
+    .logoFooterRight
+    {
+        flex-direction: column;
+        align-content:center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .logoFooterRight button
+    {
+        display: none;
+
+    }
+    .socialContact
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
 }
