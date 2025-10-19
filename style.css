@@ -94,6 +94,9 @@ h2 a
     text-decoration: none; color: black; text-align: justify;
     
 }
+h2{
+    font-size: 20px;
+}
 .headline, .headline h2 a
 {
 padding: 2px 0 0 0;
@@ -125,4 +128,93 @@ ul {
   {
     order: 2;
   }
+}
+.rightNewSection
+{
+    display: flex; 
+    flex-flow: row; 
+    gap: 10px; 
+    margin: 10px 0 0 10px; 
+    flex: 1 1 200px
+}
+
+.rightNewSection img
+{
+    width: 100px; height: 100px; object-fit: cover;
+}
+
+
+
+.footerOptions
+{
+    padding: 20px 20px 20px 20px;
+    font-family: "Helvetica Neue", Arial, Inter, sans-serif;
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footerHeadingName
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    text-align: left;
+    
+}
+.footerHeadingName {
+  text-align: left;         /* align everything to the left */
+  margin: 20px 0;
+}
+
+.footerHeadingName h2 {
+  font-size: 1.4rem;        /* slightly larger heading */
+  margin-bottom: 10px;
+  color: aliceblue;              /* optional: darker text */
+}
+
+.insideOptions ul {
+  list-style: none;         /* remove bullet points */
+  padding: 0;               /* remove default left padding */
+  margin: 0;                /* remove default margin */
+}
+
+.insideOptions li {
+  font-size: 1rem;          /* normal readable size */
+  margin: 4px 0;            /* small vertical spacing */
+  color: #555;              /* optional: slightly lighter text */
+}
+section{
+    padding: 10px 0 0 0;
+}
+
+.insideOptions li:hover
+{
+    color: aliceblue;
+    cursor: pointer;
+}
+ 
+@media (max-width: 600px) {
+  .rightNewSection{
+    flex: 1 1 100%;
+  }
+
+  .rightNewSection img {
+    width: 100%;
+    height: auto; /* keeps aspect ratio */
+  }
+  .insideOptions li {
+  display: none;
+}
+.footerHeadingName {
+    font-size: 1rem; 
+  text-align: left;         /* align everything to the left */
+  margin: 10px 0;
+}
+.footerHeadingName h2 {
+  font-size: 1rem;        /* slightly larger heading */
+  margin-bottom: 10px;
+}
 }
