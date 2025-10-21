@@ -12,10 +12,12 @@
 
 <body>
     <header>
-        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-            <div><i class="fa-solid fa-list"></i></div>
-            <div><img id="CNN-Logo" src="CNN-Logo.wine.png" alt=""></div>
-        </div>
+        <nav class="navbar">
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <div id="menuBtn"><i class="fa-solid fa-list listIcon"></i></div>
+                <div><img id="CNN-Logo" src="CNN-Logo.wine.png" alt="CNN Logo"></div>
+            </div>
+        </nav>
         <div class="leftHeaderBar">
 
             <div><a href="">US</a></div>
@@ -53,6 +55,41 @@
 
         </div>
     </header>
+
+
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="menu-columns">
+                <div class="menu-column">
+                    <h3>World</h3>
+                    <ul>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Africa</a></li>
+                    </ul>
+                </div>
+                <div class="menu-column">
+                    <h3>Business</h3>
+                    <ul>
+                        <li><a href="#">Markets</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Economy</a></li>
+                    </ul>
+                </div>
+                <div class="menu-column">
+                    <h3>Sports</h3>
+                    <ul>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Cricket</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="NewsList">
         <span><a href="">Israel-Hamas latest</a></span>
         <span style="font-weight: bold; font-size: 20px;">|</span>
@@ -404,8 +441,41 @@
                 </div>
 
             </div>
+            <div class="termsAndCond">
+                <ul style="list-style: none; display: flex; flex-wrap: wrap;">
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Manage cookies</li>
+                    <li>Ad Choices</li>
+                    <li>Accessibility & CC</li>
+                    <li>About</li>
+                    <li>NewsLetters</li>
+                    <li>Transcripts</li>
+
+                </ul>
+
+            </div>
+            <div class="cnn-footer">
+                <p>© 2025 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.</p>
+                <p>CNN Sans ™ & © 2016 Cable News Network.</p>
+            </div>
+
+
         </footer>
     </section>
 </body>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const closeBtn = document.getElementById('closeBtn');
+
+    menuBtn.addEventListener('click', () => {
+        menuOverlay.classList.add('show');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        menuOverlay.classList.remove('show');
+    });
+</script>
 
 </html>

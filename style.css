@@ -2,10 +2,14 @@
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
 
 header
 {
+    background-color: white;
+    
     display: flex;
     height: 40px;
     align-items: center;
@@ -250,6 +254,19 @@ section{
     justify-content: space-between;
     gap: 10px;
 }
+.termsAndCond
+{
+    margin: 10px 0 0 0;
+    color: white;
+    
+    
+}
+.termsAndCond ul, .termsAndCond ul li
+{
+    gap: 20px;
+    font-weight: 200;
+
+}
 @media (max-width: 600px) {
   .rightNewSection{
     flex: 1 1 100%;
@@ -307,4 +324,153 @@ section{
         flex-direction: row;
         
     }
+   .termsAndCond ul .termsAndCond ul li
+{
+    justify-content: center;
+    gap: 10px;
+    font-weight: 50;
+
+    
+}
+ .termsAndCond ul
+{
+    justify-content: center;
+    gap: 10px;
+    font-weight: 50;
+    
+}
+}
+body {
+  margin: 0;
+
+}
+
+
+.navbar {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CNN Logo */
+#CNN-Logo {
+  height: 30px;
+}
+
+/* Menu icon */
+#menuBtn {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#menuBtn:hover {
+  transform: scale(1);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(15, 15, 15, 0.97);
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+
+.menu-overlay.show {
+  display: flex;
+  opacity: 1;
+}
+
+.close-btn {
+  font-size: 36px;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  color: white;
+}
+
+.menu-content {
+  width: 80%;
+  max-width: 1000px;
+}
+
+.menu-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.menu-column h3 {
+  border-bottom: 2px solid #cc0000;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-column a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+  transition: color 0.2s;
+}
+
+.menu-column a:hover {
+  color: white;
+}
+.cnn-footer {
+  
+  color: #aaa;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 20px 20px;
+  
+}
+
+.cnn-footer p {
+  margin: 5px 0;
+}
+
+.cnn-footer p:first-child {
+  color: white;
+}
+@media (max-width: 768px) {
+  .cnn-footer {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+
+  .cnn-footer p {
+    margin: 6px 0;
+  }
+  .termsAndCond
+  {
+    font-size: 12px;
+  }
 }
